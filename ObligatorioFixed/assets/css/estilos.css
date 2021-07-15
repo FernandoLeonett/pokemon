@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+abbr {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+header {
+  background-image: linear-gradient(#f5a9a9, #ff0011);
+
+
+ 
+}
+header figure {
+  text-align: center;
+}
+header figure img {
+  width: 50px;
+}
+
+h3 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 20px;
+  color: #574cec;
+  margin: 10px 0;
+  text-align: center;
+}
+section {
+  padding: 40px;
+}
+h1 {
+  font-size: 22px;
+  color: #100f6d;
+  margin: 10px 0;
+}
+p {
+  padding: 20px;
+}
+figcaption {
+  text-align: center;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  padding-top: 85px;
+
+}
+#cabecera{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+nav#menuNav {
+  background-color: #8ba05b;
+  height: 30px;
+
+}
+nav#menuNav ul {
+  text-align: center;
+}
+nav#menuNav ul li {
+  display: inline-block;
+}
+
+nav#menuNav ul li a {
+  line-height: 30px;
+  display: inline-block;
+  text-decoration: none;
+
+  font-weight: bolder;
+  color: white;
+  padding:0 60px;
+
+  font-size: 1.1rem;
+}
+nav#menuNav ul li a:hover {
+  background-color: #86affc8c;
+  color: #b2f7f4;
+}
+nav#menuNav ul li a:active {
+  background-color: rgb(144, 189, 107);
+  color: #b2f7f4;
+}
+
+#introduccion {
+  background-image: url(/assets/img/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  background-position: top;
+  padding-top: 110px;
+  padding-bottom: 20px;
+}
+
+#introduccion div {
+  width: 600px;
+
+  background-color: #f5f7b29c;
+  margin: 0 auto;
+  margin-top: 150px;
+
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  line-height: 24px;
+}
+#introduccion div h2 {
+  color: red;
+}
+
+#introduccion div p {
+  font-weight: bolder;
+}
+#container {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: #a080285b;
+}
+
+#noticias > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#noticias article {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-basis: 100px;
+}
+
+#noticias a {
+  width: 20%;
+  color: white;
+  background: rgba(204, 35, 35, 0.76);
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+#noticias a:hover {
+  background-color: rgb(224, 125, 11);
+}
+#noticias a:active {
+  background-color: rgba(25, 185, 52, 0.582);
+}
+
+#noticias h1 {
+  margin: 0;
+}
+
+.flexNoticia {
+  display: flex;
+  flex-direction: column;
+}
+.flexNoticia p {
+  flex-grow: 2;
+  flex-basis: 100px;
+}
+
+#participantes > div {
+  display: flex;
+}
+#participantes > div article {
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+
+#participantes > div article figure {
+  text-align: center;
+}
+
+#participantes p {
+  text-align: center;
+}
+
+#participantes article figure img {
+  width: 150px;
+  border-radius: 100px;
+}
+#participantes h2 {
+  font-size: 14px;
+}
+
+#partidas > div {
+  display: flex;
+  gap: 100px;
+}
+
+#partidas article:nth-of-type(2) figure img {
+  width: 150px;
+  border-radius: 75px;
+  text-align: center;
+}
+#partidas article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 15px;
+}
+#partidas h2 {
+  text-align: left;
+}
+
+#articuloProximosEventos {
+  display: flex;
+  justify-content: space-around;
+}
+
+#fondoProximos {
+  background-color: rgba(168, 52, 87, 0.548);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  padding-top: 20px;
+  border-radius: 25px;
+}
+#fondoProximos p,
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#fondoProximos p:last-of-type {
+  flex-grow: 2;
+  margin-top: 50px;
+}
+
+#partidas > div article {
+  flex-grow: 1;
+
+  flex-basis: 100px;
+}
+table {
+  width: 100%;
+  border-spacing: 15px 10px;
+
+  text-align: center;
+}
+tbody tr:nth-child(2n) {
+  background-color: #fdcf00a1;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: #44546da4;
+}
+th {
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+td {
+  padding: 10px;
+}
+
+#galeria > div {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+#galeria > div figure img {
+  width: 250px;
+}
+#inscribirme {
+  background-color: #bb9d197c;
+}
+
+#inscribirme h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+label {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+form {
+  width: 30%;
+  margin: 0 auto;
+}
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+}
+fieldset > div {
+  display: flex;
+  gap: 30px;
+}
+fieldset > div > div {
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+fieldset > div :first-child {
+  flex-grow: 2;
+}
+input[type="text"],
+textarea,
+input[type="number"],
+select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+}
+textarea {
+  resize: none;
+}
+input[type="radio"] + label {
+  display: inline;
+}
+
+input:focus {
+  background-color: rgba(172, 187, 194, 0.877);
+  outline: 0;
+}
+
+select:focus {
+  background-color: rgba(172, 187, 194, 0.877);
+  outline: 0;
+}
+textarea:focus {
+  background-color: rgba(172, 187, 194, 0.877);
+  outline: 0;
+}
+
+input:valid {
+  background-color: rgba(27, 175, 52, 0.514);
+}
+
+textarea:valid {
+  background-color: rgba(27, 175, 52, 0.514);
+}
+
+select:valid {
+  background-color: rgba(27, 175, 52, 0.514);
+}
+input::placeholder {
+  color: white;
+}
+
+#pieForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+input[type="submit"] {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border: 0;
+
+  color: white;
+  background: rgba(204, 35, 35, 0.76);
+  cursor: pointer;
+}
+input[type="submit"]:active {
+  background-color: rgba(25, 185, 52, 0.582);
+}
+input[type="submit"]:hover {
+  background-color: rgb(224, 125, 11);
+}
+#inscribirme p {
+  text-align: right;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 0;
+  margin: 10px 0;
+}
+footer {
+  background-color: rgba(126, 115, 98, 0.541);
+  height: 100px;
+}
+footer nav ul li {
+  display: inline-block;
+}
+
+footer nav ul {
+  text-align: center;
+  line-height: 100px;
+  margin: 0 auto;
+}
+footer nav ul li a img {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+section{
+  padding-top: 100px;
+}
